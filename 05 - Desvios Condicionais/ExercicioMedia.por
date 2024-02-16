@@ -1,5 +1,5 @@
 /*
-Algoritmo: Média Condicional
+Algoritmo: Idade
 @Gustavo Amorim
 09/02/2024
 */
@@ -43,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 552; 
+ * @POSICAO-CURSOR = 35; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
