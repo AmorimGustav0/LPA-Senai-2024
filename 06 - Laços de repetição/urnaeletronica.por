@@ -1,9 +1,9 @@
 programa
 {
-	
+	inclua biblioteca Matematica 
 	funcao inicio()
 	{
-		inteiro candidatoA = 0, candudatoB = 0, brancos = 0
+		inteiro candidatoA = 0, candidatoB = 0, brancos = 0
 		inteiro nulos = 0, total = 0, voto
 		real porcentCandA, porcentCandB, porcentBrancos, porcentNulos
 
@@ -36,13 +36,35 @@ programa
 			pare
 
 			caso 3:
-				Brancos++
+				brancos++
 			pare
 
 			caso contrario:
 				nulos++
 			}             
-		}
+		} enquanto (voto !=0)
+
+	total = candidatoA + candidatoB + brancos + nulos
+
+	se (total > 0)
+		{
+			porcentCandA = (candidatoA * 100.0) / total
+			porcentCandB = (candidatoB* 100.0) / total
+			porcentBrancos = (brancos * 100.0) / total
+			porcentNulos = (nulos * 100.0) / total
+
+			escreva ("\n")
+
+			escreva ("Total de votos: ", total, "/\n\n")
+			escreva ("Candidato A: ", candidatoA, " voto(s). ", porcentCandA, " % do total\n")
+			escreva ("Candidato B: ", candidatoB, " voto(s). ", porcentCandB, " % do total\n")
+			escreva ("brancos: ", brancos, " voto(s). ", brancos, " % do total\n")
+			escreva ("nulos: ", nulos, " voto(s). ", nulos, " % do total\n")
+			Matematica.arredondar (0,2)
+			 
+			
+			}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -50,7 +72,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 675; 
+ * @POSICAO-CURSOR = 1474; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
