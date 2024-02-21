@@ -1,6 +1,6 @@
 programa
 {
-	
+	inclua biblioteca Matematica 
 	funcao inicio()
 	{
 		inteiro candidatoA = 0, candidatoB = 0, brancos = 0
@@ -60,6 +60,7 @@ programa
 			escreva ("Candidato B: ", candidatoB, " voto(s). ", porcentCandB, " % do total\n")
 			escreva ("brancos: ", brancos, " voto(s). ", brancos, " % do total\n")
 			escreva ("nulos: ", nulos, " voto(s). ", nulos, " % do total\n")
+			Matematica.arredondar (0,2)
 			 
 			
 			}
@@ -71,7 +72,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 850; 
+ * @POSICAO-CURSOR = 1474; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
