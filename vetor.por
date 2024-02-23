@@ -13,7 +13,7 @@ programa
 
 		para (inteiro p = 0; p < 10; p++)
 		{
-			
+			escreva (vetor[p], " ")
 			}
 	}
 }
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 255; 
+ * @POSICAO-CURSOR = 278; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
