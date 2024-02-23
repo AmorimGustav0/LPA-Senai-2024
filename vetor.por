@@ -9,9 +9,16 @@ programa
 		{
 			vetor[p] = util.sorteia(1,100) 
 			}
+		
 		escreva ("Vetor na ordem original: \n")
 
 		para (inteiro p = 0; p < 10; p++)
+		{
+			escreva (vetor[p], " ")
+			}
+
+		escreva ("\nVetor na ordem inversa: \n")
+		para (inteiro p = 9; p >= 0; p--)
 		{
 			escreva (vetor[p], " ")
 			}
@@ -22,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 278; 
+ * @POSICAO-CURSOR = 213; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
