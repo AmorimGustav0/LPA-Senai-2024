@@ -1,33 +1,37 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u 
+	
 	funcao inicio()
 	{
-		const inteiro TAMANHO = 5
-		real coordenadas [TAMANHO] [2]
-
-		preencher (coordenadas)
+		real coordenadas[][] = { {24.5, 30.6}, {30.7, -79.0}, {40.0, 12.08}, {16.0, -45.6} }
 		exibir (coordenadas)
+
+		
+
+		
 		
 	}
-	funcao preencher (real & coordenadas[][])
-	{
-		para (inteiro linha = 0 ; linha < u.numero_linhas(coordenadas); linha++)
+
+	
+		funcao exibir (real coordenadas [][]) 
+		{
+			para (inteiro i = 0; i < u.numero_linhas(coordenadas); i++)
 			{
-				inteiro coluna = 0
-				coordenadas[linha][coluna] = 23.5				}
-		}
-	funcao exibir (real coordenadas[][])
-	{
-		}
-	}
+				para (inteiro j = 0; j < u.numero_colunas(coordenadas); j++)
+				{
+					escreva (coordenadas[i][j], "\t")
+					}
+					escreva ("\n")
+				}
+			}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 427; 
+ * @POSICAO-CURSOR = 181; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
