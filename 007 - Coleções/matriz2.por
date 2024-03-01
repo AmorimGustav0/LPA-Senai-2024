@@ -1,37 +1,49 @@
 programa
 {
-	inclua biblioteca Util --> u 
-	
+	 inclua biblioteca Util --> u 
+	inclua biblioteca Matematica --> mat
 	funcao inicio()
 	{
-		real coordenadas[][] = { {24.5, 30.6}, {30.7, -79.0}, {40.0, 12.08}, {16.0, -45.6} }
-		exibir (coordenadas)
+		real coordenadas[5][2] 
 
+		preencher(coordenadas)
+		exibir(coordenadas)
+ 		}
 		
-
-		
+		funcao preencher (real coordenadas[][]) {
+			para (inteiro i = 0; i < u.numero_linhas(coordenadas) ; i++)
+			{
+				para (inteiro j = 0; j < u.numero_colunas(coordenadas); j++) {
+					se (j==0) {
+				coordenadas [i][j] = mat.arredondar(u.sorteia(-900, 900), 2)/100.0
+				} senao {
+					coordenadas [i][j] = mat.arredondar(u.sorteia(-1800, 1800),2)/100.0
+						}
+					}
+				}
+		}
+	funcao exibir (real coordenadas[][])
+	{
+		para (inteiro i = 0; i < u.numero_linhas(coordenadas) ; i++)
+		{
+			para (inteiro j = 0; j < u.numero_colunas(coordenadas); j++) {
+				escreva (coordenadas [i][j], "\t")
+			}
+			escreva ("\n")
+		}
 		
 	}
-
 	
-		funcao exibir (real coordenadas [][]) 
-		{
-			para (inteiro i = 0; i < u.numero_linhas(coordenadas); i++)
-			{
-				para (inteiro j = 0; j < u.numero_colunas(coordenadas); j++)
-				{
-					escreva (coordenadas[i][j], "\t")
-					}
-					escreva ("\n")
-				}
-			}
+ 
+		
+	
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 181; 
+ * @POSICAO-CURSOR = 9; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
