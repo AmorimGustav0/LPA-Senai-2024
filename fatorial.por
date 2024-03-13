@@ -4,8 +4,9 @@ programa
 	funcao inicio()
 	{
 		inteiro n = 5
-		fatorial (n)
+		
 		escreva (" o fatorial de ", n, " é ", fatorial(n), "\n")
+		escreva ("o fatorial de ", n, " usando fatorial2() ", fatorial2(n), "\n")
 		
 	}
 
@@ -15,11 +16,19 @@ programa
 		enquanto (i > 0){
 
 			resultado = resultado * i
-			n-- 
+			i-- 
 		}
 
 		retorne resultado
 		
+	}
+
+	funcao inteiro fatorial2(inteiro n){
+
+		se (n == 1 ou n == 0) {
+			retorne 1
+		}
+		retorne n * fatorial2(n - 1)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 290; 
+ * @POSICAO-CURSOR = 173; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
