@@ -22,7 +22,7 @@ programa
 
 					
 					branco( coluna * 3 + 14)
-					escreva (" \\ /\n")
+					escreva ("\\ /\n")
 					inteiro brancos = 1
 					
 					inteiro quantidade = coluna * 3 
@@ -49,14 +49,14 @@ programa
 						escreva (" ")
 						brancos++
 					}
-					escreva ("    \\ /\n")
+					escreva (" \\ /\n")
 					brancos = 1
 					quantidade = coluna * 3 + 2
 					enquanto (brancos <= quantidade){
 						escreva (" ")
 						brancos ++ 
 					}
-					escreva ("( )( )( )( )( 0.0 )")
+					escreva ("( )( ) ( )( 0.0 )")
 					
 				}
 				u.aguarde(500)
@@ -79,7 +79,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 597; 
+ * @POSICAO-CURSOR = 543; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
