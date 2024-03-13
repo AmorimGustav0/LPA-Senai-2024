@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	funcao inicio()
 	{
 	
@@ -13,17 +13,19 @@ programa
 
 				
 				se (andando == 0){
-					inteiro brancos = 1
+					/*inteiro brancos = 1
 					inteiro quantidade = coluna * 3 + 14
 					enquanto (brancos <= quantidade){
 						escreva (" ")
 						brancos ++
-					}
+					} */
 
-					escreva (" \\ /\n")
-					brancos = 1
 					
-					quantidade = coluna * 3 
+					branco( coluna * 3 + 14)
+					escreva (" \\ /\n")
+					inteiro brancos = 1
+					
+					inteiro quantidade = coluna * 3 
 					enquanto (brancos <= quantidade) {
 						escreva (" ")
 						brancos++
@@ -47,7 +49,7 @@ programa
 						escreva (" ")
 						brancos++
 					}
-					escreva ("  \\/\n")
+					escreva ("    \\ /\n")
 					brancos = 1
 					quantidade = coluna * 3 + 2
 					enquanto (brancos <= quantidade){
@@ -61,14 +63,23 @@ programa
 			}
 		}
 
-	}	
+	}
+
+		funcao branco (inteiro quantidade) {
+			inteiro brancos = 1
+			enquanto (brancos <= quantidade){
+			escreva (" ")
+			brancos ++
+					}
+
+		}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1164; 
+ * @POSICAO-CURSOR = 597; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
